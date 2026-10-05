@@ -1,0 +1,90 @@
+[
+    {
+        "id": "BIaaS_001",
+        "category": "Ordering",
+        "question": "How do I request a new 'Build IaaS' environment or additional bundles?",
+        "answer": "To order a new 'Build IaaS' environment or additional bundles, you need to send an email to the 'Service Inquiry Build-IaaS'. The email should contain detailed information in a predefined format, including: General Information (customer, responsible person, number of bundles, cluster type, cost center), Proxy Information, and TemplateVM Information (type, vCPU, RAM, SSD, owner, user).",
+        "alternative_questions": [
+            "How to order a Build IaaS environment?",
+            "What is the process for getting more bundles?",
+            "Where do I send a request for a new IaaS setup?"
+        ]
+    },
+    {
+        "id": "BIaaS_002",
+        "category": "Configuration",
+        "question": "Which machine types are available for 'Build IaaS'?",
+        "answer": "Only client machine types are offered. The available options are: Win10 SCCM, Win11 SCCM, and OSD7. Server machines are not supported.",
+        "alternative_questions": [
+            "What operating systems are supported?",
+            "Can I get a server machine?",
+            "What are the available template options?"
+        ]
+    },
+    {
+        "id": "BIaaS_003",
+        "category": "Troubleshooting",
+        "question": "What should I do if the RDP connection no longer works?",
+        "answer": "If the Remote Desktop (RDP) connection is not working, it might be due to a corrupted `PATH` environment variable. Ask the support team to restore the template from a snapshot or fix the issue if they still have access. It should also be checked whether the user is in the RDP list, as this is managed via ITSP.",
+        "alternative_questions": [
+            "My remote desktop is not connecting, what to do?",
+            "Can't connect via RDP.",
+            "How to fix RDP connection issues?"
+        ]
+    },
+    {
+        "id": "BIaaS_004",
+        "category": "Monitoring",
+        "question": "How can I monitor the status of my 'Build IaaS' environment?",
+        "answer": "The monitoring of the environment is available through a customer-specific Grafana link, which is provided to you upon environment setup.",
+        "alternative_questions": [
+            "Where can I see the status of my environment?",
+            "Is there a monitoring dashboard?",
+            "How to access Grafana for my BIaaS environment?"
+        ]
+    },
+    {
+        "id": "BIaaS_005",
+        "category": "Documentation",
+        "question": "Where can I find the documentation for 'Build IaaS'?",
+        "answer": "The customer documentation for 'Build IaaS' and information about the roles for the self-service portal are available in Confluence (Docupedia). The links are provided during the environment setup.",
+        "alternative_questions": [
+            "Where is the user guide?",
+            "I need the documentation for the self-service portal.",
+            "Link for Build IaaS documentation."
+        ]
+    },
+    {
+        "id": "BIaaS_006",
+        "category": "Integration",
+        "question": "Can a 'Build IaaS' environment be connected to a BDC GitHub Server?",
+        "answer": "Yes, it is feasible to connect your BIaaS environment or template to the BDC GitHub server. Please specify for which template machine the connection should be configured, whether it should be a primary or secondary connection, and provide the GitHub Organization address.",
+        "alternative_questions": [
+            "How to integrate with GitHub?",
+            "Can I connect my template to our GitHub organization?",
+            "Is BDC GitHub Server connection possible?"
+        ]
+    },
+    {
+        "id": "BIaaS_007",
+        "category": "Integration",
+        "question": "What is the difference between a primary and a secondary connection?",
+        "answer": "Primary Connection: The template is directly connected to Jenkins or GitHub, jobs can run on it, and the template status is online. Only one primary connection is possible. Secondary Connection: The template can be connected to multiple Jenkins or GitHubs as a secondary connection. The template status will be offline, but clones can be spun up.",
+        "alternative_questions": [
+            "What does primary connection mean?",
+            "Explain secondary connection.",
+            "Primary vs. secondary connection for templates."
+        ]
+    },
+    {
+        "id": "BIaaS_008",
+        "category": "Ordering",
+        "question": "Is it possible to request more than one template for a bundle?",
+        "answer": "Yes, it is possible to request more than one template for your bundle. Please provide the configuration details for the additional template in the specified format (Type, vCPU, RAM, SSD, User).",
+        "alternative_questions": [
+            "Can I have multiple templates in one bundle?",
+            "How to order an additional template?",
+            "Requesting a second template for my environment."
+        ]
+    }
+]
